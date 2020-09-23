@@ -1,0 +1,62 @@
+h1 {
+	color: blue;
+	text-align: center;
+	text-decoration-line: underline;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px red;
+}
+
+body {
+	color: black;
+	background-color: yellow;
+	font-family: "Ubuntu-L"
+}
+
+.gris {
+	text-decoration-line: underline;
+	font-weight: bold;
+}
+
+.shadow {
+	box-shadow: 10px 5px 5px black;
+}
+.shadow2 {
+	text-shadow: 1px 1px 0px red;
+}
+.black {
+	color: black;
+}
+
+.bababa {
+	text-shadow: 0px 0px 10px red;
+}
+.class1 {
+	color: DeepSkyBlue;
+	font-weight: bold;
+}
+
+.class2{
+	color: orange;
+	font-weight: bold;
+}
+
+.citron {
+	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	margin-right: 0px;
+	margin-left: 470px;
+}
+
+.top {
+	margin-top: 0px
+}
+
+.bottom {
+	margin-bottom: 0px
+}
+
+.boiteDemo {
+	background-color: DeepSkyBlue;
+	border-color: blue;
+	border-style: dashed;
+}
