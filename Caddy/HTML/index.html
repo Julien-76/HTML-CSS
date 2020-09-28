@@ -3,6 +3,7 @@
 	<head>
 		<title> YOOOOOOOOO !</title>
 		<link rel="stylesheet" href="CSS/global.css">
+		<link rel="stylesheet" href="CSS/flex.css">
 		<meta name="author" content="Tux le Manchot">
 		<meta name="description" content="Notre site
  d'apprentissage des langages HTML et CSS">
@@ -13,36 +14,55 @@
 		<p>Quand on entrera du texte entre ces balises, ça fera un super paragraphe !! C'est magnifique !!!</p>
 		<p>D'ailleurs en voici un deuxième !</p> <!-- premiers tests-->
 		<h2 class="shadow2" class="gris">Les différentes pages :</h2>
-		<ul>
-		<li><a href="index.html" title="pour rester ici en somme...">Accueil</a></li>
-		<li><a href="citrons.html">Citrons</a></li>
-		<li><a href="pommes.html">Pommes</a></li>
-		<li><a href="contact.html">Contact</a></li>
-		<li><a href="sandbox.html">Sandbox</a></li>
+		<nav>
+			<ul>
+			<li><a class="lienMenu" href="index.html" title="pour rester ici en somme...">Accueil</a></li>
+			<li><a class="lienMenu" href="citrons.html">Citrons</a></li>
+			<li><a class="lienMenu" href="pommes.html">Pommes</a></li>
+			<li><a class="lienMenu" href="contact.html">Contact</a></li>
+			<li><a class="lienMenu" href="sandbox.html">Sandbox</a></li>
 		</ul>
-		<p>Ordonnées :</p>
-		<ol reversed start ="50">
-			<li>Liège</li>
-			<li>Bruxelles</li>
-			<li>Namur</li>
-			<li>Arlon</li>
-			<li>Anvers</li>
-		</ol>
-		<h2 class="shadow2" class="gris">Voici une petite musique :</h2>
-		Salut ma poule !
-		<audio controls class="shadow" >
-			<source src="audio/perception.oga"   type="audio/ogg">
-			<source src="audio.perception.mp3" type="audio/mpeg">
-		</audio>
-		<a href="https://www.w3schools.com/tags/default.asp"  target="_blank"><img src="img/logo-html.svg"></a>
-		<a href="https://www.w3schools.com/cssref/default.asp" target="_blank"><img src="img/logo-css.svg" alt="Référence CSS"></a>
-		<p>Non ordonnée :</p>
-		<ul>
-			<li>Saturne</li>
-			<li>Jupiter</li>
-			<li>Neptune</li>
-			<li>Venus</li>
-			<li>Mercure</li>
-		<ul>
+		</nav>
+		<div class="contenu">
+			<main class="flexGrow1">
+				<p>Ordonnées :</p>
+				<ol reversed start ="50">
+					<li>Liège</li>
+					<li>Bruxelles</li>
+					<li>Namur</li>
+					<li>Arlon</li>
+					<li>Anvers</li>
+				</ol>
+				<h2 class="shadow2" class="gris">Voici une petite musique :</h2>
+				Salut ma poule !
+				<audio class="decalage shadow" controls  >
+					<source src="audio/perception.oga"   type="audio/ogg">
+					<source src="audio.perception.mp3" type="audio/mpeg">
+				</audio>
+				<a class="decalage" href="https://www.w3schools.com/tags/default.asp"  target="_blank"><img src="img/logo-html.svg"></a>
+				<a href="https://www.w3schools.com/cssref/default.asp" target="_blank"><img src="img/logo-css.svg" alt="Référence CSS"></a>
+				<p>Non ordonnée :</p>
+				<ul>
+					<li>Saturne</li>
+					<li>Jupiter</li>
+					<li>Neptune</li>
+					<li>Venus</li>
+					<li>Mercure</li>
+				</ul>
+			</main>
+			<aside>
+				<p class="gras"> Ca c'est du beau site !</p>
+				<p> Checkez mon CV </p>
+				<a href="documents/moncv.pdf"><img src="img/pdf.png" alt="mon cv" class="imagePDF"></a>
+				<p class="gras"> Pour me contacter : </p>
+				<p> utilisez le <a href="contact.html"> formulaire</a> de contact.</p>
+				<p class="gras">Pour approfondir HTML et CSS </p>
+				<p> Visitez le site <a href="https://www.w3schools.com" target="_blank">w3 Schoolss</a></p>
+			</aside>
+			</div>
+			<footer>
+				merci beaucoup
+			</footer>
+			
 	</body>
 </html>

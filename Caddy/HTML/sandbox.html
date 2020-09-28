@@ -2,19 +2,136 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="CSS/global.css">
+		<link rel="stylesheet" href="CSS/flex.css">
 		<title>Sandbox</title>
 	</head>
 	<body>
 		<h1>Bienvenue dans le bac à sable</h1>
 		<h2 class="shadow2" class="gris">Les différentes pages :</h2>
-		<ul>
-		<li><a href="index.html">Accueil</a></li>
-		<li><a href="citrons.html">Citrons</a></li>
-		<li><a href="pommes.html">Pommes</a></li>
-		<li><a href="contact.html">Contact</a></li>
-		<li><a href="sandbox.html">Sandbox</a></li>
-		</ul>
-		<h2 class="bleu"> Le modèle classique de boites CSS</h2>
+		<nav>
+			<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="citrons.html">Citrons</a></li>
+			<li><a href="pommes.html">Pommes</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="sandbox.html">Sandbox</a></li>
+			</ul>
+		</nav>
+	<div class="contenu">
+		<main class="item1">
+		<h2 class="bleu shadow2"> Le modèle classique de boites CSS</h2>
 		<img src="img/pdf.png" alt="PDF" class="boiteDemo">
+		<img src="img/pdf.png" alt="PDF">
+		<h2 class="bleu shadow2">Le modèle Flexbox</h2>
+					<fieldset>
+				<legend><span class="rouge gras">flex-direction : Row </span> row (defaut)</legend>
+				<div class="flexContainer shadow directionRow">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><span class="rouge gras">flex-direction : column </span> column (defaut)</legend>
+				<div class="flexContainer shadow directionColumn">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+			</div>
+		</fieldset>
+					<fieldset>
+				<legend><span class="rouge gras">flex-content : </span> flex-content</legend>
+				<div class="flexContainer shadow justifyStart">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+					<fieldset>
+				<legend><span class="rouge gras">flex-content : </span> flex-between</legend>
+				<div class="flexContainer shadow justifySpaceBetween">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+					<fieldset>
+				<legend><span class="rouge gras">flex-content : </span> flex-space around</legend>
+				<div class="flexContainer shadow justifySpaceAround">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+				<fieldset>
+				<legend><span class="rouge gras">align items : </span> End</legend>
+				<div class="flexContainer flexContainerHeight shadow alignEnd">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><span class="rouge gras">align items : </span> Center</legend>
+				<div class="flexContainer flexContainerHeight shadow alignCenter">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><span class="rouge gras">align items : </span> Start</legend>
+				<div class="flexContainer flexContainerHeight shadow alignStart">
+					<span class="flexItem itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><span class="rouge gras">flex-grow : </span> 1 et 2</legend>
+				<div class="flexContainer shadow ">
+					<span class="flexItem flexGrow1 itemBruxelles">Bruxelles</span>
+					<span class="flexItem itemMadrid">Madrid</span>
+					<span class="flexItem flexGrow2 itemOslo">Oslo</span>
+					<span class="flexItem itemParis">Paris</span>
+				</div>
+			</fieldset>
+				<fieldset>
+				<legend><span class="rouge gras">flex-grow : </span> tous à 1 sauf Oslo à 2</legend>
+				<div class="flexContainer shadow ">
+					<span class="flexItem flexGrow1 itemBruxelles">Bruxelles</span>
+					<span class="flexItem flexGrow1 itemMadrid">Madrid</span>
+					<span class="flexItem flexGrow2 itemOslo">Oslo</span>
+					<span class="flexItem flexGrow1 itemParis">Paris</span>
+				</div>
+			</fieldset>
+				<fieldset>
+				<legend><span class="rouge gras">flex-grow : </span> Start / Center / Stretch / End</legend>
+				<div class="flexContainer flexContainerHeight shadow ">
+					<span class="flexItem flexGrow1 alignSelfStart itemBruxelles">Bruxelles</span>
+					<span class="flexItem alignSelfCenter itemMadrid">Madrid</span>
+					<span class="flexItem alignSelfStretch flexGrow2 itemOslo">Oslo</span>
+					<span class="flexItem alignSelfEnd itemParis">Paris</span>
+				</div>
+			</fieldset>
+		</main>
+		<aside class="margSand">
+				<p class="gras"> Ca c'est du beau site !</p>
+				<p> Checkez mon CV </p>
+				<a href="documents/moncv.pdf"><img src="img/pdf.png" alt="mon cv" class="imagePDF"></a>
+				<p class="gras"> Pour me contacter : </p>
+				<p> utilisez le <a href="contact.html"> formulaire</a> de contact.</p>
+				<p class="gras">Pour approfondir HTML et CSS </p>
+				<p> Visitez le site <a href="https://www.w3schools.com" target="_blank">w3 Schoolss</a></p>
+		</aside>
+	</div>
 	</body>
 </html>

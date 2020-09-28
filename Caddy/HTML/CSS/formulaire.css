@@ -1,0 +1,18 @@
+.formulaireContact {
+	background-color: #4dff4d;
+	margin-top: 1%;
+	width: 20%;
+	float: none;
+	font-family: "Ubuntu-L", Helvetica, Arial, sans-serif;
+	margin-bottom: 1%;
+	padding: 1%;
+	color: black;
+}
+
+.contenuChampContact {
+	display : block;
+	width: 20%;
+	font-family: "Ubuntu-L", Helvetica, Arial, sans-serif;
+	color: black;
+	margin-bottom: 1%;
+}

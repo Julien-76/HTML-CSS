@@ -2,17 +2,50 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="CSS/global.css">
+		<link rel="stylesheet" href="CSS/formulaire.css">
 		<title>Contact</title>
 	</head>
 	<body>
 		<h1>Bienvenue sur la page de contact</h1>
-		<h2 class="shadow2" class="gris">Les différentes pages :</h2>
+		<h2 class="shadow2 " class="gris">Les différentes pages :</h2>
+		<div>
+		<nav>
 		<ul>
-		<li><a href="index.html">Accueil</a></li>
-		<li><a href="citrons.html">Citrons</a></li>
-		<li><a href="pommes.html">Pommes</a></li>
-		<li><a href="contact.html">Contact</a></li>
-		<li><a href="sandbox.html">Sandbox</a></li>
+		<li><a class="lienMenu" href="index.html">Accueil</a></li>
+		<li><a class="lienMenu" href="citrons.html">Citrons</a></li>
+		<li><a class="lienMenu" href="pommes.html">Pommes</a></li>
+		<li><a class="lienMenu" href="contact.html">Contact</a></li>
+		<li><a class="lienMenu" href="sandbox.html">Sandbox</a></li>
 		</ul>
+		</div>
+		</nav>
+	<div class="contenu">
+		<main class="item1">
+		<form action="traitement-formulaire.html">
+ 			Votre prénom<span class="rouge"> *</span>
+ 			<input type="text" name="prenom" value="" placeholder="Votre prénom ici" class="contenuChampContact">
+ 			Votre nom<span class="rouge"> *</span>
+			 <input type="text" name="nom" value="" placeholder="Votre nom ici" class="contenuChampContact">
+			 Votre adresse email<span class="rouge"> *</span>
+			<input type="text" name="mail" value="" placeholder="Votre mail ici" class="contenuChampContact">
+			 Votre message <span class="rouge"> *</span>
+			 <textarea class="contenuChampContact" rows="4" cols="50"
+			 maxlength="100" name="message" placeholder="Votre message"></textarea>
+		 <p>
+			 <input type="reset" value="Réinitialiser">
+			 <input type="submit" value="Envoyer">
+		 </p>
+		</form>
+	</main>
+	<aside>
+				<p class="gras"> Ca c'est du beau site !</p>
+				<p> Checkez mon CV </p>
+				<a href="documents/moncv.pdf"><img src="img/pdf.png" alt="mon cv" class="imagePDF"></a>
+				<p class="gras"> Pour me contacter : </p>
+				<p> utilisez le <a href="contact.html"> formulaire</a> de contact.</p>
+				<p class="gras">Pour approfondir HTML et CSS </p>
+				<p> Visitez le site <a href="https://www.w3schools.com" target="_blank">w3 Schoolss</a></p>
+		</aside>
+	</div>
 	</body>
 </html>

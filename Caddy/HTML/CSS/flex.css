@@ -1,0 +1,109 @@
+.flexFieldset {
+ width : 50%;
+ font-weight: bold;
+ margin-bottom: 2%;
+}
+.flexContainer {
+ display: flex;
+ width: 100%;
+ background-color: #80ffff;
+}
+.flexContainerHeight {
+ height: 70px;
+}
+.flexItem {
+ color: white;
+ font-size: 150%;
+ font-weight: bold;
+ padding: 5px;
+}
+
+.itemBruxelles {
+ background-color: navy;
+ color: white;
+}
+.itemMadrid {
+ background-color: orange;
+ color: white;
+}
+.itemOslo {
+ background-color: purple;
+ color: white;
+}
+.itemParis {
+ background-color: forestgreen;
+ color: white;
+}
+.directionRow {
+ flex-direction: row; /*direction par défaut*/
+ justify-content: center;
+}
+
+.directionColumn {
+ flex-direction: column;
+}
+
+.justifyStart {
+justify-content: flex-start;
+}
+
+.justifyCenter {
+justify-content: center;
+}
+
+.justifyEnd {
+justify-content: flex-end;
+}
+
+.justifySpaceBetween {
+justify-content: space-between;
+}
+
+.justifySpaceAround {
+justify-content: space-around;
+}
+
+.alignStretch {
+	align-items: stretch;
+}
+
+.alignCenter {
+	align-items: center;
+}
+
+.alignEnd {
+	align-items: flex-end;
+}
+
+.alignStart {
+	align-items: flex-start;
+}
+
+.flexGrow0 {
+	flex-grow: 0; 
+}
+
+.flexGrow1 {
+	flex-grow: 1; 
+}
+
+.flexGrow2 {
+	flex-grow: 2; 
+}
+
+.alignSelfStretch {
+	align-self: stretch;
+}
+
+.alignSelfStart {
+	align-self: flex-start;
+}
+
+.alignSelfCenter {
+	align-self: center
+}
+
+.alignSelfEnd {
+	align-self: flex-end;
+}
+
