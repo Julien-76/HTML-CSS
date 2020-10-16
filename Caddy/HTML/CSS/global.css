@@ -1,131 +1,211 @@
-h1 {
-	color: blue;
-	text-align: center;
-	text-decoration-line: underline;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px red;
+/* déclarer une police. A déclarer en premier*/
+@font-face {
+    font-family: "Ubuntu-L";
+    src: url(/theorie1/fonts/Ubuntu-L.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Ubuntu-M";
+    src: url(/theorie1/fonts/Ubuntu-M.ttf) format('truetype');
+}
+
+/* déclaration de variable */
+html {
+    /*https://www.w3schools.com/css/css3_variables.asp*/
+    --gris: #333333;
+    --gris-clair: #f2f2f2;
+    --bleu: #004d99;
+    --orange: #ff6600;
+    --orange-clair: #ffe0cc;
+    --rouge: #ff0000;
+    --vert: #2f4f4f;
+    --vert-clair: #bfd9d9;
+    --vert-tres-clair: #eff5f5;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	color: black;
-	background-color: yellow;
-	font-family: "Ubuntu-L"
+    /* couleur de fond*/
+    background-color: white;
+    /*taille de la police de caractère*/
+    font-size: 90%;
+    /* glaisse de la police*/
+    font-weight: normal;
+    /* changer la police */
+    font-family: "Ubuntu-L", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.gris {
-	text-decoration-line: underline;
-	font-weight: bold;
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 100%;
+    }
 }
 
-.shadow {
-	box-shadow: 10px 5px 5px black;
-}
-.shadow2 {
-	text-shadow: 1px 1px 0px red;
-}
-.black {
-	color: black;
-}
-
-.bababa {
-	text-shadow: 0px 0px 10px red;
-}
-.class1 {
-	color: DeepSkyBlue;
-	font-weight: bold;
-}
-
-.class2{
-	color: orange;
-	font-weight: bold;
-}
-
-.citron {
-	margin-top: 0px;
- 	margin-bottom: 0px;
- 	margin-right: 0px;
-	margin-left: 470px;
-}
-
-.top {
-	margin-top: 0px
-}
-
-.bottom {
-	margin-bottom: 0px
-}
-
-.boiteDemo {
-	background-color: DeepSkyBlue;
-	border-color: blue;
-	border-style: dashed;
-	padding: 20px;
-	margin: 30px;
-}
-.menuPrincipal {
-	font-family: "Ubuntu-M",Helvetica,Arial,sans-serif;
- 	font-weight: bold;
-	color: red;
-	text-decoration: none;
- 	background-color: green;
- 	text-align: center;
- 	margin-left: 600px;
- 	margin-right: 600px;
-}
-
-.decalage {
-	margin-left: 200px;
-}
-.lienMenu {
-	background-color: #4dff4d;
-}
-a:hover {
-	background-color: red;
-}
-
-a:active {
-	background-color: black;
-}
-aside {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 0;
-	padding: 1px;
-	border-style: dashed;
-	border-color: black;
-	background-color: orange;
-	text-align: center;
-}
 nav {
-	display: flex;
-	font-family: "Ubuntu-M",Helvetica,Arial,sans-serif;
- 	font-weight: bold;
-	color: red;
-	text-decoration: none;
- 	background-color: green;
- 	text-align: center;
- 	margin-left: 600px;
- 	margin-right: 600px;
- 	box-shadow: 10px 5px 5px black;
+    display: flex;
+    background-color: var(--vert);
+    font-size: 90%;
+    padding: 5px;
 }
+
+@media screen and (min-width: 800px) {
+    nav {
+        font-size: 100%;
+    }
+}
+
+h1 {
+    font-family: "Ubuntu-M", Helvetica, Arial, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Ubuntu-M", Helvetica, Arial, sans-serif;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Ubuntu-M", Helvetica, Arial, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* "." défini une class */
+/* les classes avec les différentes couleurs */
+.gris {
+    color: var(--gris);
+}
+
+.bleu {
+    color: var(--bleu);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.rouge {
+    color: var(--rouge);
+}
+
+.vert {
+    color: var(--vert);
+}
+
+/* classes avec différence d'écriture */
 .gras {
-	font-weight: bold;
+    font-family: "Ubuntu-M", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.leger {
+    font-family: "Ubuntu-L", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+video,
+audio {
+    width: 100%;
+}
+
+
+/* css sur le menu */
+
+.menuPrincipal {
+    background-color: var(--vert);
+    padding: 10px;
+}
+
+.lienMenu {
+    font-family: "Ubuntu-M", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-right: 1%;
+}
+
+.contenu {
+    background-color: var(--vert-clair);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 800px) {
+    .contenu {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+main {
+    background-color: var(--vert-tres-clair);
+    /* Only necessary for FlexBox setup */
+    width: 98%;
+    padding: 1%;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        width: 70%;
+    }
+}
+
+aside {
+    background-color: var(--vert-clair);
+    padding: 1%;
+}
+
+@media screen and (min-width: 800px) {
+    aside {
+        flex-grow: 1;
+    }
 }
 
 footer {
-	display: flex;
-
+    display: flex;
+    background-color: var(--vert);
+    color: white;
+    padding: 1%;
 }
-.contenu {
-	display: flex;
+
+.adresseCourriel {
+    color: white;
 }
 
-.margSand {
-	padding: 0px;
-
+.imageAccueil {
+    max-width: 70vw;
 }
-.item1 {
-		flex-grow: 2; 
+
+address {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imageFruits {
+width: 200px;
+}
+
+@media screen and (min-width: 800px) {
+.imageFruits {
+	width: 300px;
+	}
+}
+.logoHtmlCss {
+	width: 60px;
+		}
+@media screen and (min-width: 800px) {
+.logoHtmlCss {
+	width: 80px;
+	}
+}
+
+#testid {
+	background-color: red;
+	border-radius: 10px;
+	border: 2px solid black
 }

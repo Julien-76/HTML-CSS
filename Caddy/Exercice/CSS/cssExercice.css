@@ -1,0 +1,117 @@
+body {
+	background-image: url("fond_jaune.png");
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+article {
+
+}
+
+aside {
+	background-color: grey;
+}
+
+footer{
+
+}
+
+.backHeader{
+	background-image: url("fond_jaune.png");
+}
+
+.allClass{
+text-align: right;
+margin-right: 60px;
+text-transform: uppercase;
+}
+
+.logocitron{
+	width: 75px;
+	height: 75px;
+}
+
+.imagecitronduhaut{
+	height:300px;
+	width: 100%;
+    box-shadow: 4px 4px 3px black;
+}
+
+.policeCitron{
+
+	@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+        url('polices/ballpark.woff') format('woff'),
+        url('polices/ballpark.ttf') format('truetype'),
+        url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	@font-face {
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+        url('polices/dayrom.woff') format('woff'),
+        url('polices/dayrom.ttf') format('truetype'),
+        url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+}
+
+.backDiv{
+	background-image: url("citron.jpg");
+}
+.cadrageDiv{
+	
+	min-height: 200px;
+	max-height: 2000px;
+	
+}
+
+.cadrageSection{
+	background-image: url("fond_jaune.png");
+	
+}
+
+.flexContainer {
+ display: flex;
+ width: 100%;
+}
+
+
+}
+
+.backFooter{
+	background-image: url("fond_jaune.png");
+}
+
+.bordImage{
+	border: solid;
+	border color: black;
+}
+
+.flexContainer {
+ display: flex;
+ width: 100%;
+ }
+
+ .flexGrow0 {
+	flex: 0; 
+}
+
+.flexGrow1 {
+	flex: 1; 
+}
+
+.flexGrow2 {
+	flex: 2; 
+}
+
+.tailleImgCitron{
+ 
+}
+
+
